@@ -232,6 +232,98 @@ header>div>a:hover {
     margin: 0.5rem 0;
 }
 
+/* --- Start Learning section --- */
+.start-learning {
+    grid-column: full-start / full-end;
+    /* 80px by 20px */
+    max-width: auto;
+    /* Converts to 1200px */
+    margin: 2rem auto;
+    /* top & bottom = 0px, left and right = flushed; */
+    border: 2px solid blue;
+    background-color: #e7e7e7;
+}
+
+.start-learning h2 {
+    padding: 2rem 0;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.learning-grid {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: auto;
+    gap: 1.875rem;
+    /* Converted from 30px */
+    justify-content: center;
+    margin: 2rem 4.5rem;
+}
+
+.learning-card {
+    flex-basis: calc(33.333% - 1.25rem);
+    /* Converted from 20px */
+    min-width: 17.5rem;
+    /* Converted from 280px */
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
+    /* Converted from 0 4px 15px */
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+}
+
+.learning-card:hover {
+    transform: translateY(-0.3125rem);
+    /* Converted from -5px */
+}
+
+.learning-image {
+    width: 100%;
+    height: 12.5rem;
+    /* Converted from 200px */
+    background-color: var(--light-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    /* Converted from 1.5em */
+    color: var(--secondary-color);
+}
+
+.learning-details {
+    padding: 1.25rem;
+    /* Converted from 20px */
+}
+
+.learning-details h3 {
+    font-size: 1.5rem;
+    /* Converted from 1.5em */
+    margin-bottom: 0.625rem;
+    /* Converted from 10px */
+    text-align: left;
+}
+
+.learning-details p {
+    color: var(--secondary-color);
+    margin-bottom: 0.9375rem;
+    /* Converted from 15px */
+    font-size: 0.95rem;
+    /* Converted from 0.95em */
+}
+
+.learning-links a {
+    display: inline-block;
+    margin-right: 0.9375rem;
+    /* Converted from 15px */
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
 /* Start of footer section */
 
 footer {
