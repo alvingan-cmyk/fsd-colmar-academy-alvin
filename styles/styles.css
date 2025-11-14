@@ -102,6 +102,9 @@ header {
     padding: 2rem 1.5rem 2rem 1.5rem;
     /* top=2rem right=0 btm=2rem left=1.5rem */
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header>img {
@@ -154,6 +157,8 @@ header>div>a:hover {
     height: auto;
 }
 
+
+
 .practice>.practice-text {
     padding: 0 1.5rem;
 }
@@ -177,7 +182,8 @@ header>div>a:hover {
 .events {
     display: grid;
     grid-template-rows: repeat(3, min-content);
-    border: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+
 }
 
 .events>.event-block {
