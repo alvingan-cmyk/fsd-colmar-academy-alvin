@@ -152,6 +152,7 @@ header>div>a:hover {
     justify-content: flex-start;
     /* push content to the left */
     flex-direction: column;
+    border: 2px solid pink;
 }
 
 .practice>.imagecontainer>img {
@@ -166,8 +167,8 @@ header>div>a:hover {
 }
 
 .practice>.practice-text>h1 {
-    font-size: x-large;
-    margin: 2rem 0 1.5rem 0;
+    font-size: 2.2rem;
+    margin: 0 0 1.5rem 0;
 }
 
 .practice>.practice-text>p {
@@ -235,13 +236,10 @@ header>div>a:hover {
 /* --- Start Learning section --- */
 .start-learning {
     grid-column: full-start / full-end;
-    /* 80px by 20px */
     max-width: auto;
-    /* Converts to 1200px */
-    margin: 2rem auto;
-    /* top & bottom = 0px, left and right = flushed; */
     border: 2px solid blue;
     background-color: #e7e7e7;
+    padding-bottom: 32px;
 }
 
 .start-learning h2 {
@@ -255,24 +253,16 @@ header>div>a:hover {
     border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
-    align-items: auto;
-    gap: 1.875rem;
-    /* Converted from 30px */
+    gap: 2rem;
     justify-content: center;
-    margin: 2rem 4.5rem;
+    margin: 0rem 4.5rem;
 }
 
 .learning-card {
-    flex-basis: calc(33.333% - 1.25rem);
-    /* Converted from 20px */
-    min-width: 17.5rem;
-    /* Converted from 280px */
-    background-color: var(--white);
-    border-radius: var(--border-radius);
+    flex-basis: 20rem;
+    min-width: 20rem;
     box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
-    /* Converted from 0 4px 15px */
-    overflow: hidden;
-    transition: transform var(--transition-speed);
+    border: 2px solid green;
 }
 
 .learning-card:hover {
@@ -294,34 +284,26 @@ header>div>a:hover {
 }
 
 .learning-details {
-    padding: 1.25rem;
-    /* Converted from 20px */
+    padding: 1rem 2rem 0 1rem;
 }
 
 .learning-details h3 {
-    font-size: 1.5rem;
-    /* Converted from 1.5em */
-    margin-bottom: 0.625rem;
-    /* Converted from 10px */
+    font-size: 1.375rem;
+    /* margin-top: 16px; */
     text-align: left;
 }
 
 .learning-details p {
-    color: var(--secondary-color);
-    margin-bottom: 0.9375rem;
-    /* Converted from 15px */
-    font-size: 0.95rem;
-    /* Converted from 0.95em */
+    margin: 8px 0;
+    font-size: 1rem;
 }
 
-.learning-links a {
-    display: inline-block;
-    margin-right: 0.9375rem;
-    /* Converted from 15px */
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 600;
+.learning-details .p-details {
+    border: 2px solid pink;
+    margin-bottom: 24px;
+    font-size: 1rem;
 }
+
 
 
 /* Start of footer section */
