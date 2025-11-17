@@ -28,17 +28,15 @@ a {
   grid-template-rows: repeat(6, min-content);
 }
 
-/* TODO */
-
 /** Start of Desktop Section **/
 /** ************************ **/
 
 /* Set up the navbar for the desktop */
+/* IMPORTANT: navbar uses 1fr of the screen */
 nav {
   display: flex;
   grid-column: full-start / full-end;
   justify-content: space-between;
-  /* IMPORTANT: navbar uses 1fr of the screen */
   height: 4rem;
 }
 
@@ -91,7 +89,7 @@ header {
 }
 
 .imagecontainer {
-  padding: 2rem 1.5rem 2rem 1.5rem; /* top=2rem right=0 btm=2rem left=1.5rem */
+  padding: 2rem 1.5rem 2rem 1.5rem;
   display: flex;
   justify-content: center; /* centralised left-right */
 }
@@ -176,7 +174,6 @@ header > div > a:hover {
   border-top: 0.0625rem solid #e7e7e7;
   border-bottom: 0.0625rem solid #e7e7e7;
   align-items: center;
-  border: 0.125rem solid red;
 }
 
 .events .event-block:last-child {
@@ -221,7 +218,6 @@ header > div > a:hover {
   max-width: auto;
   background-color: #e7e7e7;
   padding-bottom: 2rem;
-  border: 2px solid orange;
 }
 
 .start-learning h1 {
@@ -253,10 +249,6 @@ header > div > a:hover {
 .learning-image {
   width: 100%;
   height: auto;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  /* border: 2px solid red; */
 }
 
 .learning-details {
@@ -395,8 +387,6 @@ footer > ul > li:last-child {
 /** ********************** **/
 /** End of Desktop Section **/
 
-/* TODO */
-
 /** Start of Mobile Section **/
 /** *********************** **/
 
@@ -457,6 +447,8 @@ footer > ul > li:last-child {
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem 2rem 1rem;
+    border-top: 0;
+    border-bottom: 0`;
   }
 
   .events > .event-block:first-child > img {
@@ -488,9 +480,12 @@ footer > ul > li:last-child {
     display: none;
   }
 
+  .events .event-block:last-child {
+    margin-bottom: 0;
+  }
+
   .events > .event-block > .event-img-mobile {
     display: block;
-    /* padding: 1rem; */
   }
 
   .start-learning {
