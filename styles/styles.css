@@ -150,7 +150,7 @@ header > div > a:hover {
 }
 
 .practice > .practice-text > h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin: 0 0 1.5rem 0;
 }
 
@@ -284,46 +284,44 @@ header > div > a:hover {
 .thesis-header {
   grid-column: full-start / full-end;
   max-width: auto;
-  background-color: #e7e7e7;
-  padding: 32px;
+  padding: 2rem 0;
   text-align: center;
-  
 }
-
-
-.thesis {
+.thesis-left {
   display: flex;
   justify-content: flex-start; /* push content to the left */
   flex-direction: column;
-  border: 2px solid pink;
+  align-items: flex-start;}
+
+.videocontainer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center; /* centralised left-right */
 }
 
-.thesis > .videocontainer > img {
-  max-width: 100%;
-  height: auto;
-}
-
-.thesis > .thesis-text {
+.thesis-left > .practice-text {
   padding: 0 1.5rem;
 }
 
-.thesis > .thesis-text > p {
-  font-size: small;
-  font-weight: lighter;
+.thesis-left > .practice-text > h1 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
 }
-.thesis > .thesis-text > p {
+
+.thesis-left > .practice-text > p {
   font-size: small;
   font-weight: lighter;
+  padding: 0 0 32px 0;
 }
 
 /* Set up thesis events section */
-.thesis-events {
+.events {
   display: grid;
-  grid-template-rows: repeat(2, min-content);
+  grid-template-rows: repeat(3, min-content);
   border-left: 1px solid #e7e7e7;
 }
 
-.thesis-events .thesis-event-block {
+.events .event-block {
   display: grid;
   grid-template-columns: 0.35fr 0.65fr;
   border-top: 1px solid #e7e7e7;
@@ -331,38 +329,38 @@ header > div > a:hover {
   align-items: center;
 }
 
-.thesis-events .thesis-event-block:last-child {
+.events .event-block:last-child {
   background-color: #d8d8d8;
 }
 
-.thesis-events > .thesis-event-block > img {
+.events > .event-block > img {
   max-width: 100%;
   height: auto; /* Set to auto to be automatically proportionate to the width */
   margin: 1rem;
 }
 
-.thesis-events > .thesis-event-block:first-child > img {
+.events > .event-block:first-child > img {
   margin-top: 2rem;
 }
 
-.thesis-events > .thesis-event-block > .thesis-event-text > h3 {
+.events > .event-block > .event-text > h3 {
   font-size: medium;
 }
 
-.thesis-events > .thesis-event-block > .thesis-event-text {
+.events > .event-block > .event-text {
   margin: 2rem;
 }
 
-.thesis-events > .thesis-event-block > .thesis-event-text > p,
-.thesis-events > .thesis-event-block > .thesis-event-text > a {
+.events > .event-block > .event-text > p,
+.events > .event-block > .event-text > a {
   font-size: small;
 }
 
-.thesis-events > .thesis-event-block > .thesis-event-text > a {
+.events > .event-block > .event-text > a {
   color: #3434c6;
 }
 
-.thesis-events > .thesis-event-block > .thesis-event-text > p {
+.events > .event-block > .event-text > p {
   margin: 0.5rem 0;
 }
 
