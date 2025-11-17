@@ -8,7 +8,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -120,7 +120,7 @@ header > div > h2 {
 header > div > a {
   background-color: #484848;
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 0.5rem 0;
   text-align: center;
   color: #fff;
@@ -137,7 +137,6 @@ header > div > a:hover {
   display: flex;
   justify-content: flex-start; /* push content to the left */
   flex-direction: column;
-  border: 2px solid pink;
 }
 
 .practice > .imagecontainer > img {
@@ -168,19 +167,21 @@ header > div > a:hover {
 .events {
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  border-left: 1px solid #e7e7e7;
+  border-left: 0.0625rem solid #e7e7e7;
 }
 
 .events .event-block {
   display: grid;
   grid-template-columns: 0.35fr 0.65fr;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
+  border-top: 0.0625rem solid #e7e7e7;
+  border-bottom: 0.0625rem solid #e7e7e7;
   align-items: center;
+  border: 0.125rem solid red;
 }
 
 .events .event-block:last-child {
   background-color: #d8d8d8;
+  margin-bottom: 2rem;
 }
 
 .events > .event-block > img {
@@ -219,7 +220,7 @@ header > div > a:hover {
   grid-column: full-start / full-end;
   max-width: auto;
   background-color: #e7e7e7;
-  padding-bottom: 32px;
+  padding-bottom: 2rem;
   border: 2px solid orange;
 }
 
@@ -231,7 +232,6 @@ header > div > a:hover {
 }
 
 .learning-grid {
-  border: 2px solid red;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -244,7 +244,6 @@ header > div > a:hover {
   min-width: 15rem;
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
   background-color: white;
-  border: 2px solid green;
 }
 
 .learning-card:hover {
@@ -275,7 +274,6 @@ header > div > a:hover {
 }
 
 .learning-details .p-details {
-  border: 2px solid pink;
   margin-bottom: 1.5rem;
 }
 /* End of Start Learning section */
@@ -291,12 +289,17 @@ header > div > a:hover {
   display: flex;
   justify-content: flex-start; /* push content to the left */
   flex-direction: column;
-  align-items: flex-start;}
+  align-items: flex-start;
+}
 
 .videocontainer {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  border: 0.0625rem solid #8d8d8d;
   display: flex;
   justify-content: center; /* centralised left-right */
+}
+
+.video-border {
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .thesis-left > .practice-text {
@@ -311,56 +314,44 @@ header > div > a:hover {
 .thesis-left > .practice-text > p {
   font-size: small;
   font-weight: lighter;
-  padding: 0 0 32px 0;
+  padding: 0 0 2rem 0;
 }
 
 /* Set up thesis events section */
-.events {
+.thesis-events {
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  border-left: 1px solid #e7e7e7;
 }
 
-.events .event-block {
+.thesis-events .thesis-event-block {
   display: grid;
   grid-template-columns: 0.35fr 0.65fr;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
   align-items: center;
 }
 
-.events .event-block:last-child {
+.thesis-events .thesis-event-block:first-child {
   background-color: #d8d8d8;
 }
 
-.events > .event-block > img {
+.thesis-events > .thesis-event-block > img {
   max-width: 100%;
   height: auto; /* Set to auto to be automatically proportionate to the width */
   margin: 1rem;
 }
 
-.events > .event-block:first-child > img {
-  margin-top: 2rem;
-}
-
-.events > .event-block > .event-text > h3 {
+.thesis-events > .thesis-event-block > .thesis-event-text > h3 {
   font-size: medium;
 }
 
-.events > .event-block > .event-text {
+.thesis-events > .thesis-event-block > .thesis-event-text {
   margin: 2rem;
 }
 
-.events > .event-block > .event-text > p,
-.events > .event-block > .event-text > a {
+.thesis-events > .thesis-event-block > .thesis-event-text > p {
   font-size: small;
 }
 
-.events > .event-block > .event-text > a {
-  color: #3434c6;
-}
-
-.events > .event-block > .event-text > p {
+.thesis-events > .thesis-event-block > .thesis-event-text > p {
   margin: 0.5rem 0;
 }
 
@@ -372,7 +363,7 @@ footer {
   display: flex;
   flex-direction: row;
   font-size: smaller;
-  border-top: 1px solid #e7e7e7;
+  border-top: 0.0625rem solid #e7e7e7;
   justify-content: space-between;
   padding: 1rem 0 2rem 0;
   color: #8d8d8d;
@@ -453,6 +444,8 @@ footer > ul > li:last-child {
 
   header > div > a {
     opacity: 0.5;
+    width: auto;
+    padding: 1rem;
   }
 
   .events {
@@ -470,10 +463,15 @@ footer > ul > li:last-child {
     margin-top: 0;
   }
 
+  .events > .event-block > img {
+    margin-top: 0;
+  }
+
   .events > .event-block > .event-text {
     width: 100%;
     height: 100%;
     padding-left: 1rem;
+    margin: 0 0 3rem 0; /* bottom 48px + top 16px = 64px per event-block */
   }
 
   .events > .event-block > .event-text > h3 {
@@ -492,7 +490,62 @@ footer > ul > li:last-child {
 
   .events > .event-block > .event-img-mobile {
     display: block;
-    padding: 1rem;
+    /* padding: 1rem; */
+  }
+
+  .start-learning {
+    padding: 0 0 2rem 0;
+    background-color: #fff;
+    margin: 0;
+    border-bottom: 0.0625rem solid #e7e7e7;
+  }
+
+  .learning-grid {
+    gap: 0.5rem;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .learning-card {
+    background-color: #d8d8d8;
+    padding: 1rem 0 1.5rem 1rem; /* The visual looks center align, but I followed the text padding-bottom 24px */
+    display: flex;
+    min-width: 100%;
+  }
+
+  .learning-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .learning-details {
+    padding: 0;
+  }
+
+  .learning-image,
+  .learning-details p {
+    display: none;
+  }
+
+  .start-learning h1 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .thesis-left {
+    grid-column: full-start / full-end;
+  }
+
+  .video-border {
+    padding: 0 0 1.5rem 0;
+  }
+
+  .thesis-events,
+  .thesis-event-block,
+  .thesis-event-text,
+  .thesis-left > .practice-text {
+    display: none;
+  }
+
+  footer {
+    border: 0;
   }
 
   footer > ul {
@@ -505,7 +558,7 @@ footer > ul > li:last-child {
 
   .events .event-block:last-child {
     background-color: #fff;
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 0.0625rem solid #e7e7e7;
   }
 }
 
