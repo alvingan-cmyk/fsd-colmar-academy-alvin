@@ -232,14 +232,14 @@ header > div > a:hover {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin: 0rem 4.5rem;
+  margin: 0rem 4.5rem; /* boundary box for the 72px margin left-right */
 }
 
 .learning-card {
-  flex-basis: 15rem;
-  min-width: 15rem;
-  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
-  background-color: white;
+    flex-basis: calc(25.333% - 1.25rem); 
+    min-width: 17.5rem; 
+    background-color: #fff;
+ 
 }
 
 .learning-card:hover {
